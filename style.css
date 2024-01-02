@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #00bcd4, #2196f3);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlideDown 1s ease-out forwards;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+main {
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#buttons button {
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#buttons button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+@keyframes fadeInSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adicione estas regras no final do seu arquivo CSS para aplicar estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        margin-top: 5px;
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 8px 15px;
+    }
+
+    #buttons button {
+        padding: 12px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 1em;
+    }
+}
